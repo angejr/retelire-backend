@@ -44,6 +44,6 @@ COPY --from=build /app /app
 RUN mkdir -p /data
 VOLUME /data
 
-# Start the server by default, this can be overwritten at runtime
+# Start the server by default, this can be overwritten at runtime //
 EXPOSE 1337
 CMD [ "npm", "run", "start" ]
